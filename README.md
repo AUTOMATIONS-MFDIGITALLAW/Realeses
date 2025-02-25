@@ -2,17 +2,25 @@
 
 ***LEIA COM ATENÇÃO***
 
-Aqui ficara todos os instaladores de robos da ***Meireles E Freitas***.
+Aqui ficarão todos os instaladores dos robôs da ***Meireles & Freitas***.
 
->Apenas instaladores e todos na aba de ***Realese*** a direita do git.
+>Somente os instaladores serão armazenados aqui, e todos estarão disponíveis na aba ***Releases***, à direita no GitHub.
 
-Em caso de mudança de codigo ou alterações como: ***Login, Senhas, imagens***, ***NÃO MUDARÁ AUTOAMTICAMENTE NESSE REPOSITORIO***.
-lembrar de buildar novamente o instalador para a nova versão dele.
+⚠️ Importante:
+Qualquer alteração no código, como ***login, senhas, imagens ou outras modificações, NÃO SERÁ ATUALIZADA AUTOMATICAMENTE NESTE REPOSITÓRIO***.
+Sempre que houver mudanças no código, ***é necessário gerar uma nova versão do instalador***.
 
-Maior parte dos instaladores são utilizado o PyInstaller, abaixo deixarei o codigo de sugestão para buildar o codigo novamente:
-***Lembre de mudar o nome do arquivo e pastas do seu projeto***
+🔧 Como gerar um novo instalador
+A maioria dos instaladores é criada usando ***PyInstaller***. Abaixo está um comando sugerido para gerar um novo instalador:
+📌 ***Lembre-se de alterar o nome do arquivo e das pastas do seu projeto antes de executar!***
 
 `pyinstaller --onedir --hidden-import "flet_desktop" --hidden-import "pyautogui" --add-data "img;img" --add-data "function;function" --add-data "src;src" --add-data "Task;Task" --add-data ".env;." --icon=nomedoicone.ico --name NomeParaAplicação  main.py` 
 
-Se você deseja um novo instalador, instale "InnoSetup", este é um programa para criar novos instaladores :
+📦 Criando um instalador
+Se precisar gerar um ***novo instalador***, utilize o programa ***Inno Setup***.
+Este software permite criar instaladores personalizados para seus robôs.
+
+Para mais informações, ***procure por "How to make an installer using Inno Setup"***.
+
+🚀 Lembre-se de sempre buildar o instalador novamente após qualquer atualização no código!
 [How to make a installer](https://www.youtube.com/watch?v=5U-nBAfbSek)
